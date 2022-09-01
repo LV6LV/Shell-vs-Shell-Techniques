@@ -6,6 +6,19 @@ Repository Creator
 
 #### This repository aims to show techniques to be able to use in a shell x shell in koth
 # Examples
+### View what uses are doing
+This can be piped into grep or egrep if you want to view many PTS's
+```
+ps auxf
+
+ps auxf | grep pts
+
+or
+
+ps -ef -o ppid,pid,tty,comm | grep pts
+
+```
+
 ### Hide your PTS
  if you have an opponent, and he is killing your session, you can become invisible in the machine, you can use this technique to hide on the machine, without needing a rootkit to hide
  
