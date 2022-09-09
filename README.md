@@ -15,7 +15,7 @@ ps auxf | grep pts
 
 or
 
-ps -ef -o ppid,pid,tty,comm | grep pts
+ps -efa -o ppid,pid,tty,comm | grep pts
 
 ```
 
